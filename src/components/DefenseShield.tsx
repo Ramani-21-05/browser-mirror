@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, Check, Copy, ExternalLink, X, AlertTriangle } from 'lucide-react';
+import { Shield, Check, Copy, X } from 'lucide-react';
 
 interface DefenseShieldProps {
   onClose: () => void;

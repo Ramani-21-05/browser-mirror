@@ -1,6 +1,6 @@
 import React from 'react';
 import { AudioTelemetry } from '../types/telemetry';
-import { Volume2, Activity, Disc } from 'lucide-react';
+import { Volume2, Activity } from 'lucide-react';
 
 export const AudioInspector: React.FC<{ data: AudioTelemetry }> = ({ data }) => {
   return (

@@ -7,19 +7,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        obsidian: "#0a0b0e",
+        obsidian: "var(--color-bg)",
         surface: {
-          dark: "#050508",
-          card: "#11131a",
-          cardHover: "#161922",
-          border: "#1f2430",
-          borderHover: "#2d3545",
+          dark: "var(--color-surface-dark)",
+          card: "var(--color-card)",
+          cardHover: "var(--color-card-hover)",
+          border: "var(--color-border)",
+          borderHover: "var(--color-border-hover)",
         },
         cyber: {
-          cyan: "#00f0ff",
-          cyanDim: "#00f0ff22",
+          cyan: "var(--color-accent)",
+          cyanDim: "var(--color-accent-dim)",
           amber: "#ffb703",
-          green: "#10b981",
+          green: "var(--color-secondary)",
           crimson: "#ef4444",
           purple: "#a855f7",
         }

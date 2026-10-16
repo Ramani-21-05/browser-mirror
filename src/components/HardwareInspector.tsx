@@ -1,6 +1,6 @@
 import React from 'react';
 import { HardwareTelemetry } from '../types/telemetry';
-import { HardDrive, Monitor, BatteryCharging, Battery, Zap, Gauge } from 'lucide-react';
+import { HardDrive, Monitor, BatteryCharging, Battery } from 'lucide-react';
 
 export const HardwareInspector: React.FC<{ data: HardwareTelemetry }> = ({ data }) => {
   return (
