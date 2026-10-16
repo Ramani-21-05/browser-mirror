@@ -138,6 +138,47 @@ export const EntropyScoreCard: React.FC<ScoreCardProps> = ({ data, onOpenShield,
 
         </div>
 
+        {/* Plain English Impact Box for Everyday Users */}
+        <div className="p-4 sm:p-5 rounded-xl bg-gradient-to-r from-amber-500/10 via-surface-dark to-cyan-500/10 border border-amber-500/30 flex flex-col gap-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <span className="text-amber-400 text-lg">💡</span>
+              <strong className="text-white text-sm font-sans tracking-wide">
+                What does this mean for you in plain English?
+              </strong>
+            </div>
+            <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+              For Everyone
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div className="p-3 rounded-lg bg-surface-dark/80 border border-white/5 flex flex-col gap-1">
+              <span className="text-gray-400 font-mono">1. Can websites track you?</span>
+              <span className="text-cyber-crimson font-bold text-sm">Yes, Instantly.</span>
+              <span className="text-gray-400 leading-relaxed">
+                Your device is 1 in {data.rarityOneInN.toLocaleString()}. Advertising scripts don't need cookies to know it's you.
+              </span>
+            </div>
+
+            <div className="p-3 rounded-lg bg-surface-dark/80 border border-white/5 flex flex-col gap-1">
+              <span className="text-gray-400 font-mono">2. Does Incognito stop it?</span>
+              <span className="text-cyber-amber font-bold text-sm">No, Not at all.</span>
+              <span className="text-gray-400 leading-relaxed">
+                Incognito only clears local browser history. Your screen resolution, GPU, and sound chip remain identical.
+              </span>
+            </div>
+
+            <div className="p-3 rounded-lg bg-surface-dark/80 border border-white/5 flex flex-col gap-1">
+              <span className="text-gray-400 font-mono">3. How can you fix it?</span>
+              <span className="text-cyber-cyan font-bold text-sm">Defense Shield Active.</span>
+              <span className="text-gray-400 leading-relaxed">
+                Click "Remediate Leaks" below to turn on canvas randomization or use privacy browsers that spoof hardware noise.
+              </span>
+            </div>
+          </div>
+        </div>
+
         {/* Global Cryptographic Signature Bar */}
         <div className="p-4 rounded-xl bg-surface-dark/50 border border-surface-border flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2.5 overflow-hidden">
